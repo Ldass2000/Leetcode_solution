@@ -12,3 +12,7 @@
 |  344   | [reverse-string.](https://leetcode.com/problems/reverse-string/)                                                                                   |              <->               |
 |  707  | [Design Linked List.](https://leetcode.com/problems/design-linked-list/)                                                                                                              |              <->               |
 |  82   | [Remove Duplicates from Sorted List II.](https://leetcode.com/problems/remove-duplicates-from-sorted-list-ii/)                                                                                       |              <->               |
+|  199  | [Binary Tree Right Side View.](https://leetcode.com/problems/binary-tree-right-side-view/)                                                                                       |              <->               |
+|  113  | [Path Sum II.](https://leetcode.com/problems/path-sum-ii/)                                                                                       |              <->               |
+|  450  | [Delete Node in a BST.](https://leetcode.com/problems/delete-node-in-a-bst/)                                                                                       |              <->               |
+
