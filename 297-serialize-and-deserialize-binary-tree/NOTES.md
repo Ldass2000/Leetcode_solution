@@ -1,4 +1,5 @@
-​##In serialize:-
+​
+          ## In serialize:-
 	   #i)-> We iterate over the tree using the level order traverse
 	   #ii)-> Convert the current node value to string and add(" ").
 	   #iii)-> whnever we reach NULL we put #(any speacila character) which represent Null node in our string 
