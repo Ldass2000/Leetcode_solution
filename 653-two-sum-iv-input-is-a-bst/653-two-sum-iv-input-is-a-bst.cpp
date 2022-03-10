@@ -11,28 +11,32 @@
  */
 class Solution {
 public:
-     vector<int> v;
-      void inorder(TreeNode* root){
-        if(!root) return;
-        inorder(root->left);
-        v.push_back(root->val);
-        inorder(root->right);
+    
+    void helper(TreeNode* root, vector<int>&ans)
+    {
+        if(root==NULL) return;
+        helper(root->left,ans);
+        ans.push_back(root->val);
+        helper(root->right,ans);
     }
     
     bool findTarget(TreeNode* root, int k) {
-         inorder(root);
-        int n=v.size();
-        int start=0;
-        int end=n-1;
-        while(start<end){
-            if(v[start]+v[end]==k)
-                return true;
-            else if(v[start]+v[end]<k)
-                start++;
-            else 
-                end--;
-        }
-        return false;
-    
+        // INORDER + TWO POINTER
+        //Do inorder traverse of BST  which give us back a sorted vector of all the tree's value.
+        //Then use two pointre to find  a Two Sum
+        //TC-->O(Recursive)
+        //SC-->O(N)
+        vector<int>ans;
+        helper(root,ans);
+        int i=0;
+        int j=ans.size()-1;
+         while(i<j)
+         {
+             int sum=ans[i]+ans[j];
+             if(sum==k) return 1;
+             if(sum>k) j--;
+             else  i++;
+         }
+        return 0;
     }
 };
