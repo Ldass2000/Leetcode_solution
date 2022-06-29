@@ -1,7 +1,7 @@
 class Solution {
 public:
     int lengthOfLongestSubstring(string s) {
-         int freq[256]={0};
+        int freq[256]={0};
         int l=0,r=0,ans=0,n=s.size();
         while(r<n){
             freq[s[r]]++;
